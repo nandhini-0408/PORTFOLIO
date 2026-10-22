@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- ============================================================
+       META & HEAD
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nandhini P — AI/ML Engineer & final-year B.Tech CSE student at SRM IST. Specialising in machine learning, deep learning, REST APIs and software development." />
+  <meta name="keywords" content="Nandhini P, AI ML Engineer, SRM IST, portfolio, deep learning, software development" />
+  <meta name="author" content="Nandhini P" />
+  <meta property="og:title" content="Nandhini P — AI/ML Portfolio" />
+  <meta property="og:description" content="AI/ML Engineer who cares about clean, usable products." />
+  <meta property="og:type" content="website" />
+  <!-- TODO: Replace og:image with an actual preview image URL -->
+  <meta property="og:image" content="assets/og-preview.png" />
+
+  <title>Nandhini P — Portfolio</title>
+
+  <!-- Favicon — TODO: replace with your own favicon files -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+
+  <!-- Google Fonts (only external dependency) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo / Brand -->
+      <a href="#hero" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>NP<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop nav links -->
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certs</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Dark / Light toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle colour theme" title="Toggle theme">
+          <span class="theme-icon" id="themeIcon">☀️</span>
+        </button>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#experience" class="mobile-nav-link">Experience</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#certifications" class="mobile-nav-link">Certs</a>
+      <a href="#education" class="mobile-nav-link">Education</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 1: HERO
+    ============================================================ -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <!-- Subtle greeting line -->
+        <p class="hero-greeting reveal">Hi there, I'm</p>
+
+        <!-- Main name -->
+        <h1 class="hero-name reveal">
+          Nandhini<span class="accent"> P</span>
+        </h1>
+
+        <!-- Tagline -->
+        <p class="hero-tagline reveal">
+          AI/ML Engineer who cares about<br class="tagline-break" />
+          <span class="accent">clean, usable products</span>
+        </p>
+
+        <!-- Sub-info -->
+        <p class="hero-sub reveal">
+          Final-year B.Tech CSE @ SRM IST &nbsp;·&nbsp; CGPA 8.44 &nbsp;·&nbsp; 2027
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="hero-buttons reveal">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://drive.google.com/file/d/1Yt_U-b-ckun4GEUskroUUaQgIPwZQsnv/view?usp=sharing" class="btn btn-secondary" target="_blank" rel="noopener">Resume ↗</a>
+          <a href="#contact" class="btn btn-ghost">Contact</a>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator reveal" aria-hidden="true">
+          <span></span>
+        </div>
+      </div>
+
+      <!-- Decorative background blobs -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: ABOUT
+    ============================================================ -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+
+          <!-- Bio text -->
+          <div class="about-text reveal">
+            <p>
+              I'm <strong>Nandhini P</strong>, a final-year Computer Science student at SRM IST (batch of 2027)
+              with a CGPA of <span class="accent">8.44</span>. I love sitting at the intersection of
+              <strong>AI/ML research</strong> and <strong>practical software engineering</strong> — building systems
+              that are not only accurate, but genuinely useful.
+            </p>
+            <p>
+              My work spans end-to-end ML pipelines (from raw sensor data to deployment), deep learning models
+              for audio and vision, REST API development, and competitive programming. I believe that great
+              engineering is invisible — it just <em>works</em>.
+            </p>
+            <p>
+              When I'm not training models or debugging CSS at midnight, you'll find me tackling LeetCode problems,
+              contributing to open-source, or exploring the latest research papers in multimodal AI.
+            </p>
+
+            <!-- Quick-facts chips -->
+            <div class="about-chips">
+              <span class="chip">🎓 SRM IST, Chennai</span>
+              <span class="chip">🤖 AI / ML</span>
+              <span class="chip">💻 Software Dev</span>
+              <span class="chip">🏆 Competitive Programming</span>
+              <span class="chip">🌐 REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: EXPERIENCE (timeline)
+    ============================================================ -->
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+
+        <div class="timeline">
+
+          <!-- ── Experience 1: Infosys Springboard ── -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">AI Intern</h3>
+                  <p class="timeline-company">Infosys Springboard</p>
+                </div>
+                <span class="timeline-date">Sep – Nov 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>
+                  Developed predictive maintenance models on time-series sensor data;
+                  <!-- TODO: fill in accuracy % once confirmed -->
+                  achieved <strong>TODO: XX%</strong> accuracy vs baseline.
+                </li>
+                <li>
+                  Built end-to-end ML pipelines covering data preprocessing, feature engineering,
+                  model training, and deployment.
+                </li>
+                <li>
+                  Performed hyperparameter tuning (grid search + Bayesian optimisation) to
+                  maximise model performance on real-world industrial datasets.
+                </li>
+                <li>
+                  Presented findings and insights to mentors, translating technical results
+                  into actionable recommendations.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Time-Series</span>
+                <span class="tag">ML Pipelines</span>
+                <span class="tag">Feature Engineering</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Experience 2: Pazl InfoLyte ── -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Web Developer Intern</h3>
+                  <p class="timeline-company">Pazl InfoLyte</p>
+                </div>
+                <span class="timeline-date">May – Jun 2025</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>
+                  Designed and developed fully responsive web pages using HTML, CSS, and vanilla JavaScript.
+                </li>
+                <li>
+                  Debugged and resolved cross-browser compatibility issues across Chrome, Firefox, Safari and Edge.
+                </li>
+                <li>
+                  Iterated on UI/UX based on structured user feedback, improving usability scores and reducing
+                  reported friction points.
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive Design</span>
+                <span class="tag">Cross-browser</span>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.timeline -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: PROJECTS
+    ============================================================ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <p class="section-subtitle reveal">Things I've built (and things still being built)</p>
+
+        <div class="projects-grid">
+
+          <!-- ── Project 1: Speech Emotion Recognition ── -->
+          <article class="project-card reveal">
+            <!-- TODO: Replace src with actual project screenshot/banner -->
+            <div class="project-image">
+              <div class="project-image-placeholder" aria-label="Project screenshot placeholder">
+                🎙️
+              </div>
+              <span class="project-badge">Deep Learning</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Speech Emotion Recognition<br/><small>Cross-Corpus Generalization</small></h3>
+              <dl class="project-meta">
+                <dt>Problem</dt>
+                <dd>SER models trained on one corpus (RAVDESS) generalise poorly to a new corpus (TESS), limiting real-world utility.</dd>
+                <dt>Approach</dt>
+                <dd>CNN + Attention mechanism with domain-adaptive training; beat LSTM and Transformer baselines on unweighted accuracy.</dd>
+                <dt>Result</dt>
+                <dd>Accuracy improved <strong>53% → 57.7%</strong> cross-corpus; <strong>64.5% UA</strong> on TESS, outperforming LSTM and Transformer.</dd>
+              </dl>
+              <div class="project-stack">
+                <span class="tag">Python</span>
+                <span class="tag">CNN</span>
+                <span class="tag">Attention</span>
+                <span class="tag">RAVDESS</span>
+                <span class="tag">TESS</span>
+                <span class="tag">LibROSA</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Add actual GitHub repo link -->
+                <a href="https://github.com/nandhini-0408/speech-emotion-recognition" class="btn btn-sm btn-primary" target="_blank" rel="noopener">GitHub ↗</a>
+                <!-- TODO: Add demo link if available -->
+                <!-- <a href="#TODO-demo" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Demo ↗</a> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 2: FakeShield-LAD ── -->
+          <article class="project-card reveal">
+            <!-- TODO: Replace with actual screenshot -->
+            <div class="project-image">
+              <div class="project-image-placeholder" aria-label="Project screenshot placeholder">
+                🛡️
+              </div>
+              <span class="project-badge">AI Security</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">FakeShield-LAD</h3>
+              <dl class="project-meta">
+                <dt>Problem</dt>
+                <dd>Forged legal and academic documents are increasingly hard to detect with human inspection alone.</dd>
+                <dt>Approach</dt>
+                <dd>AI-driven system combining image forensics, NLP anomaly detection, and metadata analysis to flag manipulated documents.</dd>
+                <dt>Result</dt>
+                <!-- TODO: Fill in accuracy / F1 metrics once confirmed -->
+                <dd>End-to-end document authenticity pipeline; <strong>TODO: add metrics</strong>.</dd>
+              </dl>
+              <div class="project-stack">
+                <span class="tag">Python</span>
+                <span class="tag">Computer Vision</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Image Forensics</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Add actual GitHub repo link -->
+                <a href="https://github.com/nandhini-0408/FakeShield-LAD" class="btn btn-sm btn-primary" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 3: AI Predictive Maintenance ── -->
+          <article class="project-card reveal">
+            <!-- TODO: Replace with actual screenshot -->
+            <div class="project-image">
+              <div class="project-image-placeholder" aria-label="Project screenshot placeholder">
+                ⚙️
+              </div>
+              <span class="project-badge">ML / IoT</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AI-Driven Predictive Maintenance</h3>
+              <dl class="project-meta">
+                <dt>Problem</dt>
+                <dd>Unplanned industrial equipment failures lead to costly downtime; reactive maintenance is insufficient.</dd>
+                <dt>Approach</dt>
+                <dd>Time-series anomaly detection pipeline on sensor data; end-to-end ML from ingestion to alert generation.</dd>
+                <dt>Result</dt>
+                <!-- TODO: Fill in accuracy / F1 / downtime reduction metrics -->
+                <dd><strong>TODO: XX% accuracy</strong> on hold-out set; integrated with deployment pipeline.</dd>
+              </dl>
+              <div class="project-stack">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">Time-Series</span>
+                <span class="tag">Anomaly Detection</span>
+                <span class="tag">Flask</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Add actual GitHub repo link -->
+                <a href="https://github.com/nandhini-0408/predictive-maintenance" class="btn btn-sm btn-primary" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 4: Flood Disaster Forecasting ── -->
+          <article class="project-card reveal">
+            <!-- TODO: Replace with actual screenshot -->
+            <div class="project-image">
+              <div class="project-image-placeholder" aria-label="Project screenshot placeholder">
+                🌊
+              </div>
+              <span class="project-badge featured">Major Project</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Flood Disaster Forecasting<br/><small>Satellite Data Analysis</small></h3>
+              <dl class="project-meta">
+                <dt>Problem</dt>
+                <dd>Early and accurate flood prediction from satellite imagery can save lives and aid disaster response agencies.</dd>
+                <dt>Approach</dt>
+                <dd>Deep learning on multi-spectral satellite data for flood extent mapping and severity forecasting.</dd>
+                <dt>Result</dt>
+                <!-- TODO: Fill in IoU / accuracy metrics -->
+                <dd><strong>TODO: add metrics</strong> on test satellite dataset.</dd>
+              </dl>
+              <div class="project-stack">
+                <span class="tag">Python</span>
+                <span class="tag">Deep Learning</span>
+                <span class="tag">Satellite Data</span>
+                <span class="tag">Remote Sensing</span>
+                <span class="tag">GIS</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Add actual GitHub repo link -->
+                <a href="https://github.com/nandhini-0408/flood-disaster-forecasting" class="btn btn-sm btn-primary" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 5: Hazardous Asteroid Prediction ── -->
+          <article class="project-card reveal">
+            <!-- TODO: Replace with actual screenshot -->
+            <div class="project-image">
+              <div class="project-image-placeholder" aria-label="Project screenshot placeholder">
+                ☄️
+              </div>
+              <span class="project-badge">Data Science</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Hazardous Asteroid Prediction</h3>
+              <dl class="project-meta">
+                <dt>Problem</dt>
+                <dd>Classify potentially hazardous asteroids from NASA's Near Earth Objects (NEO) dataset.</dd>
+                <dt>Approach</dt>
+                <dd>Feature engineering on orbital parameters + ensemble classifiers (Random Forest, XGBoost) with SHAP explainability.</dd>
+                <dt>Result</dt>
+                <!-- TODO: Fill in accuracy / precision / recall metrics -->
+                <dd><strong>TODO: add accuracy %</strong> classification on NASA NEO dataset.</dd>
+              </dl>
+              <div class="project-stack">
+                <span class="tag">Python</span>
+                <span class="tag">XGBoost</span>
+                <span class="tag">Random Forest</span>
+                <span class="tag">SHAP</span>
+                <span class="tag">NASA NEO</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Add actual GitHub repo link -->
+                <a href="https://github.com/nandhini-0408/hazardous-asteroid-prediction" class="btn btn-sm btn-primary" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ── Project 6: LeetCode Metrics App ── -->
+          <article class="project-card reveal">
+            <!-- TODO: Replace with actual screenshot -->
+            <div class="project-image">
+              <div class="project-image-placeholder" aria-label="Project screenshot placeholder">
+                🧩
+              </div>
+              <span class="project-badge">Web App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">LeetCode Metrics App</h3>
+              <dl class="project-meta">
+                <dt>Problem</dt>
+                <dd>LeetCode's default stats UI lacks visual clarity for tracking personal competitive programming progress.</dd>
+                <dt>Approach</dt>
+                <dd>Vanilla JS app consuming the public LeetCode GraphQL API; custom conic-gradient donut charts via DOM manipulation.</dd>
+                <dt>Result</dt>
+                <dd>Clean dashboard showing solved count by difficulty, acceptance rate, and streaks — fully client-side, zero dependencies.</dd>
+              </dl>
+              <div class="project-stack">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">LeetCode API</span>
+                <span class="tag">conic-gradient</span>
+                <span class="tag">DOM</span>
+              </div>
+              <div class="project-links">
+                <!-- TODO: Add actual GitHub repo link -->
+                <a href="https://github.com/nandhini-0408/leetcode-metrics-app" class="btn btn-sm btn-primary" target="_blank" rel="noopener">GitHub ↗</a>
+                <!-- TODO: Add live demo link -->
+                <!-- <a href="#TODO-demo-leetcode" class="btn btn-sm btn-ghost" target="_blank" rel="noopener">Demo ↗</a> -->
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /.projects-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: SKILLS
+    ============================================================ -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+
+        <div class="skills-grid">
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">
+              <span class="skill-group-icon">📝</span> Languages
+            </h3>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">Python</span>
+              <span class="chip">C</span>
+              <span class="chip">C++</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">
+              <span class="skill-group-icon">🌐</span> Web
+            </h3>
+            <div class="chips">
+              <span class="chip">HTML5</span>
+              <span class="chip">CSS3</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Flask</span>
+              <span class="chip">React</span>
+              <span class="chip">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">
+              <span class="skill-group-icon">🤖</span> AI / ML
+            </h3>
+            <div class="chips">
+              <span class="chip">Machine Learning</span>
+              <span class="chip">Deep Learning</span>
+              <span class="chip">Feature Engineering</span>
+              <span class="chip">CNNs</span>
+              <span class="chip">Attention Mechanisms</span>
+              <span class="chip">Time-Series</span>
+              <span class="chip">NLP</span>
+              <span class="chip">Computer Vision</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">
+              <span class="skill-group-icon">🛠️</span> Tools & Platforms
+            </h3>
+            <div class="chips">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Jupyter</span>
+              <span class="chip">Google Colab</span>
+              <span class="chip">AWS</span>
+              <span class="chip">Azure</span>
+            </div>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">
+              <span class="skill-group-icon">🔌</span> APIs & Protocols
+            </h3>
+            <div class="chips">
+              <span class="chip">REST APIs</span>
+              <span class="chip">GraphQL</span>
+              <span class="chip">JSON</span>
+              <span class="chip">HTTP/S</span>
+            </div>
+          </div>
+
+        </div><!-- /.skills-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: CERTIFICATIONS
+    ============================================================ -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Certifications</h2>
+
+        <div class="certs-grid">
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">☁️</div>
+            <div class="cert-body">
+              <h3 class="cert-name">AWS Certified Cloud Practitioner</h3>
+              <p class="cert-issuer">Amazon Web Services</p>
+              <!-- TODO: Add badge image and verification link -->
+              <!-- <a href="#TODO-aws-cert-link" class="cert-verify" target="_blank" rel="noopener">Verify ↗</a> -->
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">🔷</div>
+            <div class="cert-body">
+              <h3 class="cert-name">GenSpark Cloud Azure Engineer</h3>
+              <p class="cert-issuer">Microsoft</p>
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">⚡</div>
+            <div class="cert-body">
+              <h3 class="cert-name">Foundational C</h3>
+              <p class="cert-issuer">Microsoft</p>
+              <!-- TODO: Add badge image and verification link -->
+              <!-- <a href="#TODO-c-cert-link" class="cert-verify" target="_blank" rel="noopener">Verify ↗</a> -->
+            </div>
+          </div>
+
+          <div class="cert-card reveal">
+            <div class="cert-icon">🟡</div>
+            <div class="cert-body">
+              <h3 class="cert-name">SAP Certified — Back-End Developer</h3>
+              <p class="cert-issuer">ABAP Cloud · SAP</p>
+            </div>
+          </div>
+
+        </div><!-- /.certs-grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7: EDUCATION
+    ============================================================ -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Education</h2>
+
+        <div class="education-card reveal">
+          <div class="edu-logo" aria-label="SRM IST logo placeholder">
+            <!-- TODO: Replace with actual SRM IST logo -->
+            🎓
+          </div>
+          <div class="edu-body">
+            <h3 class="edu-degree">B.Tech in Computer Science & Engineering</h3>
+            <p class="edu-institution">SRM Institute of Science and Technology, Chennai</p>
+            <div class="edu-meta">
+              <span class="edu-year">2023 – 2027</span>
+              <span class="edu-cgpa">CGPA <strong class="accent">8.44</strong></span>
+            </div>
+            <div class="chips edu-chips">
+              <span class="chip">AI / ML</span>
+              <span class="chip">Data Structures</span>
+              <span class="chip">Algorithms</span>
+              <span class="chip">Operating Systems</span>
+              <span class="chip">DBMS</span>
+              <span class="chip">Computer Networks</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 8: CONTACT
+    ============================================================ -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <p class="section-subtitle reveal">
+          I'm open to internships, full-time roles, research collaborations, and interesting conversations.
+          My inbox is always open.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Email card -->
+          <a href="mailto:nandhini.20060804@gmail.com" class="contact-card reveal" aria-label="Send email">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">nandhini.20060804@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- LinkedIn card -->
+          <a href="https://www.linkedin.com/in/nandhini0/" class="contact-card reveal" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <div class="contact-icon">🔗</div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <p class="contact-value">linkedin.com/in/nandhini0</p>
+            </div>
+          </a>
+
+          <!-- GitHub card -->
+          <a href="https://github.com/nandhini-0408" class="contact-card reveal" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <p class="contact-value">github.com/nandhini-0408</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Download resume CTA -->
+        <div class="contact-cta reveal">
+          <!-- TODO: Replace href with your actual hosted resume URL or keep resume.pdf -->
+          <a href="https://drive.google.com/file/d/1Yt_U-b-ckun4GEUskroUUaQgIPwZQsnv/view?usp=sharing" class="btn btn-primary btn-lg" target="_blank" rel="noopener" aria-label="Download resume PDF">
+            ⬇ Download Resume
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Designed &amp; built by <span class="accent">Nandhini P</span> · 
+        <span id="currentYear"></span> · 
+        Open to opportunities ✨
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
